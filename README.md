@@ -1,7 +1,7 @@
 # ETL- Project Proposal
 Demonstration of Extract, Transform, Load from two data sources (csv and postgres db) into a joined postgres database table.
 
-#Extract 
+# Extract 
 1. Data Source 
   Wilson & Reeder's Mammal Species of the World: https://www.departments.bucknell.edu/biology/resources/msw3/
   
