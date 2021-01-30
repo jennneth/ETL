@@ -19,7 +19,7 @@ We then joined the two tables on scientific_name, using a left join on ECOS. We 
 Next, we reduced the number of columns in the dataframe and changed the names of some columns to match the database table, columns in pgadmin. 
 
 # Load 
-We read through each dataset and created a Postgres table to load into. Then we wrote the portion of the python script that loads the data into the Postgres database. 
+We read through each dataset and created a Postgres table to load into. Then we wrote the portion of the python script that loads the data into the Postgres database. The final postgres relational database contains both the original ECOS table and the transformed MAMMALS table which includes the scientific_name and the date the mammal was first documented as being endangered.
 
 # Visualization
 ![](ERD/orginals.png)
