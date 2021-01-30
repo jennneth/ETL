@@ -12,7 +12,11 @@ Both files downloaded from the internet as CSVs. ECOS data was loaded into Postg
 
 # Transform
 
-Once imported, we created a scientific_name field in the mammals dataframe by concatenating the genus and species.  We then joined the two tables on scientific_name. Next, we reduced the number of columns in the dataframe and changed the names of some columns to match the database table, columns in pgadmin. 
+Once imported, we created a scientific_name field in the mammals dataframe by concatenating the genus and species.
+
+We then joined the two tables on scientific_name, using a left join on ECOS. We noticed that the joined table had more records than the original ECOS table, so we performed some analysis and identified that several scientific_names had multiple records in the mammals table. This is because the mammals table has a greater level of naming detail at the subspecies level.
+
+Next, we reduced the number of columns in the dataframe and changed the names of some columns to match the database table, columns in pgadmin. 
 
 # Load 
 We read through each dataset and created a Postgres table to load into. Then we wrote the portion of the python script that loads the data into the Postgres database. 
