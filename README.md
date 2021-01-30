@@ -8,11 +8,11 @@ Demonstration of Extract, Transform, Load from two data sources (csv and postgre
 2. Data Source 
 Environmental Conservation Online System (ECOS): https://ecos.fws.gov/ecp/report/species-listings-by-tax-group?statusCategory=Listed&groupName=Mammals
   
-Both files downloaded as CSVs. ECOS data was loaded into Postgres using PG Admin’s import tool. Wilson & Reeder's CSV data imported to pandas using from_csv, the other using from_sql with pandas.
+Both files downloaded from the internet as CSVs. ECOS data was loaded into Postgres using PG Admin’s import tool, and then pulled into a pandas dataframe using the from_sql function. Wilson & Reeder's CSV data imported to pandas using from_csv.
 
 # Transform
 
-Once imported, we joined the two table by concatenating genus and species into scientific name.  Next, we reduced the number of columns in the dataframe and changed the names of some columns to match the database table, columns in pgadmin. 
+Once imported, we createdjoined the two table by concatenating genus and species into scientific name.  Next, we reduced the number of columns in the dataframe and changed the names of some columns to match the database table, columns in pgadmin. 
 
 # Load 
 We read through each dataset and created a Postgres table to load into. Then we wrote the portion of the python script that loads the data into the Postgres database. 
