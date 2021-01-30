@@ -12,10 +12,10 @@ Both files downloaded as CSVs. ECOS data was loaded into Postgres using PG Admin
 
 # Transform
 
-Once imported, we joined the two tables based on scientific name. Next, we reduced the number of columns in the dataframe and changed the names of some columns to match the database table, columns in pgadmin. 
+Once imported, we joined the two table by concatenating genus and species into scientific name.  Next, we reduced the number of columns in the dataframe and changed the names of some columns to match the database table, columns in pgadmin. 
 
 # Load 
-We read through each dataset and created a Postgres table to load into. Then we wrote the portion of the python script that loads the data into the Postgresdatabase. 
+We read through each dataset and created a Postgres table to load into. Then we wrote the portion of the python script that loads the data into the Postgres database. 
 
 # Visualization
 ![](ERD/orginals.png)
