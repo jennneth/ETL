@@ -18,5 +18,6 @@ Once imported, we joined the two tables based on scientific name. Next, we reduc
 We read through each dataset and created a Postgres table to load into. Then we wrote the portion of the python script that loads the data into the Postgresdatabase. 
 
 # Visualization
-Orginal data set:
- ![](ERD/mammalsset2.png)
+![](ERD/orginals.png)
+
+![](ERD/mammalsset2.png)
